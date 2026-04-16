@@ -1,0 +1,80 @@
+body {
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(125, 120, 120);
+    padding: 1rem;  
+    text-align: center;
+    
+}
+
+nav a {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+
+.hero-banner {
+    background-image: url(../assets/img/UCONN-2026.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.78);
+}
+
+.hero-banner .content-section {
+    position: relative;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 40px 20px;
+    color: #222;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+}
+
+.feature-image {
+    max-width: 50%;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableau-section {
+    padding: 40px 20px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.tableauPlaceholder {
+    margin: 0 auto;
+    display: block;
+}
+
+.media-section {
+    text-align: center;
+    padding: 40px 20px;
+}

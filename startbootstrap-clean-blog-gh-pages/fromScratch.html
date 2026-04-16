@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Madness</title>
+    <link rel="stylesheet" href="css/myStyles.css">
+</head>
+<body>
+    <nav>
+        <a href="HomePage.html">Home</a> 
+        <a href="#why-madness">Why It's Great</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#brackets">Brackets</a>
+        <a href="snakegame.html">Snake Game</a>
+    </nav>
+
+    <div class="hero-banner">
+    <div id="why-madness" class="content-section">
+        <!--Nested lists go here-->
+        <h2>March Madness is Pure Cinema</h2>
+        <ol>
+            <li>Single Elimination Format</li>
+                <ul>
+                    <li>One loss and you're out</li>
+                    <li>Every game feels like a championship</li>
+                    <li>Cinderella stories are possible every round</li>
+                </ul>
+            </li>
+            <li>64-team bracket</li>
+            <li>Bracket culture - millions fill one out every year</li>
+        </ol>
+    </div>
+    </div>
+
+    <div id="highlights" class="media-section">
+        <!--Image + Youtube video-->
+        <p>Some of the Best Moments from March Madness History</p>
+        <iframe 
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/boibjX4zdbc" frameborder="0"
+            title="March Madness Highlight Video"
+            allowfullscreen>
+        </iframe>
+        <p>BYU's AJ Dybansta driving in the round of 64 vs. Texas</p>
+        <img src="assets/img/BYU-2026.jpg" alt="AJ Dybansta" class="feature-image">
+    </div>
+
+    <div id="brackets" class="tableau-section">
+        <!--Tableau embedded here-->
+        <p>March Madness Brackets from 1985-2016</p>
+        <p>The red dots are upsets, the bigger the dot, the more surprising the upset!</p>
+        <p>You can clearly see that the tournament is very unpredictable and truly madness!</p>
+        <div class='tableauPlaceholder' id='viz1776290373851' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt=' ' src='https://public.tableau.com/static/images/GR/GRNYH6RF7/1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='path' value='shared/GRNYH6RF7' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/GR/GRNYH6RF7/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1776290373851');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '900px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+</body>
+</html>
